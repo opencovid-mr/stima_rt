@@ -19,7 +19,7 @@ outputFolder <- "output//Rt_hosp"
 int_consolidamento <- 7 # giorni che si considerano NON consolidati 
 
 # Selezionare T per soltanto ultimo giorno, F per tutti i giorni
-ultimo <- F
+ultimo <- T
 
 # Lettura dati ----
 # I dati sui casi sintomatici per data inizio sintomi sono pubblicati dall'Istituto Superiore Sanita'
@@ -134,7 +134,7 @@ png(filename = here::here(outputFolder, "Rt_hosp_Ita_updated_latest.png"), width
                       " aggiornato al ", tail(storico_date,1), " con 95%CrI"), 
        x = "Data", y = "Rt_hosp",
        subtitle = paste0("ATTENZIONE: dati ultimi ", int_consolidamento, " giorni esclusi in quanto non consolidati. Per un confronto con Rt_sintomi considerare ritardo tra sintomi e ricovero."),
-       caption = paste0("Rt ottenuto con EpiEstim (tw=7gg, shape=", shape.stimato, " rate=", rate.stimato, ") da dati Istituto Superiore Sanità")) +
+       caption = paste0("Rt ottenuto con EpiEstim (tw=7gg, shape=", shape.stimato, " rate=", rate.stimato, ") da dati Istituto Superiore SanitÃ ")) +
   ylim(0, NA) +
   geom_point(data = tail(outputCons,1), aes(x = Data, y = R.medio), size =3) +
   geom_text(data = tail(outputCons,1), aes(label = paste0(round(R.medio,2), " [", round(R.lowerCI,2), "-", round(R.upperCI,2), "]")),
