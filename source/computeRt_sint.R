@@ -7,6 +7,7 @@
 
 library(EpiEstim)
 library(here)
+library(ggplot2)
 
 set.seed(42)
 
@@ -119,3 +120,25 @@ for (i in toDo) {
   }
 
 }
+
+Sys.setlocale("LC_TIME", "Italian") #per avere date in italiano
+
+outputCons <- head(output, -int_consolidamento)
+
+png(filename = here::here(outputFolder, "Rt_sint_Ita_updated_latest.png"), width = 465, height = 225, units='mm', res = 300)
+
+  ggplot(outputCons, aes(x = Data, y = R.medio)) +
+  geom_smooth(aes(ymin = R.lowerCI, ymax = R.upperCI), stat = "identity") +
+  geom_hline(yintercept = 1) +
+  labs(title = paste0("Rt_sintomi Italia aggiornato al ", tail(storico_date,1), " con 95%CrI"), x = "Data", y = "Rt_sint",
+       subtitle = paste0("ATTENZIONE: dati ultimi ", int_consolidamento, " giorni esclusi in quanto non consolidati"),
+       caption = paste0("Rt ottenuto con EpiEstim (tw=7gg, shape=", shape.stimato, " rate=", rate.stimato, ") da dati Istituto Superiore Sanità")) +
+  ylim(0, NA) +
+  geom_point(data = tail(outputCons,1), aes(x = Data, y = R.medio), size =3) +
+  geom_text(data = tail(outputCons,1), aes(label = paste0(round(R.medio,2), " [", round(R.lowerCI,2), "-", round(R.upperCI,2), "]")),
+            hjust=1.1,vjust=-0) +
+  theme_minimal(base_size = 16) +
+  scale_x_date(date_breaks = "1 month", date_labels="%b-%Y" ) +
+  theme(axis.text.x = element_text(angle = 45, hjust=1))
+
+dev.off()
