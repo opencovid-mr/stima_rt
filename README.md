@@ -14,8 +14,17 @@ Codice R per stimare indice Rt_sintomi Italia
 **Fonte dati**
 Storicizzazione dei dati a cura di [onData](https://github.com/ondata/covid19italia/tree/master/webservices/iss_epicentro_dati) e [Andrea Mignone](https://github.com/floatingpurr/covid-19_sorveglianza_integrata_italia) a partire da ["COVID-19 ISS open data"](https://www.epicentro.iss.it/coronavirus/open-data/covid_19-iss.xlsx) di ISS
 
+- - -
+
+[Rt_sintomi: dati aggiornati](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_sint/Rt_sint_Ita_updated_latest.csv)
 
 ![Last Plot Rt_sintomi](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_sint/Rt_sint_Ita_updated_latest.png)
 
-[Rt_sintomi: dati aggiornati](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_sint/Rt_sint_Ita_updated_latest.csv)
+- - -
+
+[Rt_ricoveri: Dati aggiornati](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_hosp/Rt_hosp_Ita_updated_latest.csv)
+
+![Last Plot Rt_ricoveri](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_hosp/Rt_hosp_Ita_updated_latest.png)
+
+
 
