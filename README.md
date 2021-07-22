@@ -6,7 +6,7 @@ Codice R per stimare indici Rt di Italia
 
 [Script FBK](https://www.epicentro.iss.it/coronavirus/open-data/calcolo_rt_italia.zip) - [EpiEstim](https://cran.r-project.org/package=EpiEstim)
 
-[Nota metodologica](https://www.epicentro.iss.it/coronavirus/open-data/rt.pdf)
+[Nota metodologica FBK «Stime della trasmissibilità di SARS-CoV-2 in Italia»](https://www.epicentro.iss.it/coronavirus/open-data/rt.pdf)
 
 
 **Fonte dati**
