@@ -1,6 +1,6 @@
 # stima_rt
 
-Codice R per stimare indici Rt di Italia e Lombardia
+Codice R per stimare indici Rt di Italia
 
 **Le stime dei giorni più recenti (14 per Rt_sintomi e 7 per Rt_ricoveri) sono sottostime in quanto derivano da dati non consolidati**
 
