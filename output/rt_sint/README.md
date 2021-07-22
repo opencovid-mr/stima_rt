@@ -1,1 +1,0 @@
-## Stime Rt_sintomi
