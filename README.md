@@ -16,13 +16,13 @@ Storicizzazione dei dati a cura di [onData](https://github.com/ondata/covid19ita
 
 - - -
 
-[Rt_sintomi: dati aggiornati](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_sint/Rt_sint_Ita_updated_latest.csv)
+[Rt_sintomi - Dati aggiornati](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_sint/Rt_sint_Ita_updated_latest.csv)
 
 ![Last Plot Rt_sintomi](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_sint/Rt_sint_Ita_updated_latest.png)
 
 - - -
 
-[Rt_ricoveri: Dati aggiornati](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_hosp/Rt_hosp_Ita_updated_latest.csv)
+[Rt_ricoveri - Dati aggiornati](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_hosp/Rt_hosp_Ita_updated_latest.csv)
 
 ![Last Plot Rt_ricoveri](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_hosp/Rt_hosp_Ita_updated_latest.png)
 
