@@ -23,8 +23,11 @@ jobs:
       run: |
         R -e 'install.packages(c("here", "EpiEstim"))'
     # Run R script
-    - name: Update RT Estimates + CSV
+    - name: Update RT Estimates Sintomi + CSV
       run: Rscript source/computeRt_sint.R
+    # Run R script
+    - name: Update RT Estimates Hospitalizations + CSV
+      run: Rscript source/computeRt_hosp.R
       
  # Add new files in data folder, commit along with other modified files, push
     - name: Commit files
