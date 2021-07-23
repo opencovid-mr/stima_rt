@@ -2,6 +2,10 @@
 
 Codice R per stimare indice Rt_sintomi e Rt_ricoveri dell'Italia
 
+[![GitHub commit](https://img.shields.io/github/last-commit/opencovid-mr/stima_rt)](https://github.com/opencovid-mr/stima_rt/commits/master)
+
+
+
 **Le stime dei giorni più recenti (14 per Rt_sintomi, 7 giorni per Rt_ricoveri) sono sottostime in quanto derivano da dati non consolidati**
 
 **Le stime sono calcolate senza distinzione tra casi autoctoni e casi importati in quanto tale distinzione dei casi non è regolarmente disponibile**
