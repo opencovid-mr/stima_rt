@@ -25,10 +25,10 @@ ultimo <- T
 # I dati sui casi sintomatici per data inizio sintomi sono pubblicati dall'Istituto Superiore Sanita'
 # https://www.epicentro.iss.it/coronavirus/open-data/covid_19-iss.xlsx
 # File input archiviato da OnData https://ondata.it/
-file <- "https://raw.githubusercontent.com/ondata/covid19italia/master/webservices/iss_epicentro_dati/processing/casi_inizio_sintomi_sint.csv"
+# file <- "https://raw.githubusercontent.com/ondata/covid19italia/master/webservices/iss_epicentro_dati/processing/casi_inizio_sintomi_sint.csv"
 # oppure
 # File input archiviato da Andrea Mignone https://twitter.com/i_m_andrea
-# file <- "https://raw.githubusercontent.com/floatingpurr/covid-19_sorveglianza_integrata_italia/main/data/latest/casi_inizio_sintomi_sint.csv"
+file <- "https://raw.githubusercontent.com/floatingpurr/covid-19_sorveglianza_integrata_italia/main/data/latest/casi_inizio_sintomi_sint.csv"
 
 data <- read.csv(file)
 data$CASI_SINT <- suppressWarnings(as.numeric(data$CASI_SINT)) #elimina i "<5"
