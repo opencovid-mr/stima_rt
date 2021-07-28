@@ -28,6 +28,9 @@ jobs:
     # Run R script
     - name: Update RT Estimates Hospitalizations + CSV
       run: Rscript source/computeRt_hosp.R
+    # Run R script
+    - name: Update RT Estimates Lombardia + CSV
+      run: Rscript source/computeRt_Lombardia.R
       
  # Add new files in data folder, commit along with other modified files, push
     - name: Commit files
