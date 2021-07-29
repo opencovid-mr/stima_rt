@@ -38,15 +38,21 @@ Lombardia: Storicizzazione dei dati a cura di [OpenCovid](https://github.com/ope
 **Grafici e stime aggiornate**
 
 
-[Rt_sintomi - ultimo aggiornamento](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_sint/Rt_sint_Ita_updated_latest.csv)
+[Rt_sintomi Italia - ultimo aggiornamento](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_sint/Rt_sint_Ita_updated_latest.csv)
 
-![Last Plot Rt_sintomi](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_sint/Rt_sint_Ita_updated_latest.png)
+![Last Plot Rt_sintomi Italia](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_sint/Rt_sint_Ita_updated_latest.png)
 
 
 
-[Rt_ricoveri - ultimo aggiornamento](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_hosp/Rt_hosp_Ita_updated_latest.csv)
+[Rt_ricoveri Italia - ultimo aggiornamento](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_hosp/Rt_hosp_Ita_updated_latest.csv)
 
-![Last Plot Rt_ricoveri](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_hosp/Rt_hosp_Ita_updated_latest.png)
+![Last Plot Rt_ricoveri Italia](https://github.com/opencovid-mr/stima_rt/blob/main/output/Rt_hosp/Rt_hosp_Ita_updated_latest.png)
+
+
+
+[Rt_sintomi Lombardia - ultimo aggiornamento](https://github.com/opencovid-mr/stima_rt/blob/main/output/regioneLombardia/Rt_sint_regLombardia_updated_latest.csv)
+
+![Last Plot Rt_sintomi Lombardia](https://github.com/opencovid-mr/stima_rt/blob/main/output/regioneLombardia/Rt_sint_regLombardia_updated_latest.png)
 
 
 
