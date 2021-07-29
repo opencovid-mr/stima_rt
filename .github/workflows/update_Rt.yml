@@ -40,7 +40,7 @@ jobs:
             echo "New update available"
             git config --local user.name actions-user
             git config --local user.email "actions@github.com"
-            git add output/Rt_sint/* output/Rt_hosp/*
+            git add output/Rt_sint/* output/Rt_hosp/* output/regioneLombardia/*
             git commit -am "Update data - $(date)"
             git push origin main
           else
