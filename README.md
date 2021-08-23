@@ -28,6 +28,7 @@ Italia: Storicizzazione dei dati a cura di [onData](https://github.com/ondata/co
 
 Lombardia: Storicizzazione dei dati a cura di [OpenCovid](https://github.com/opencovid-mr/Lombardia-Stati_Clinici/) a partire da ["Matrice degli stati clinici Covid-19 inviati a ISS"](https://hub.dati.lombardia.it/Sanit-/Matrice-degli-stati-clinici-Covid-19-inviati-a-ISS/7jw9-ygfv) di Regione Lombardia
 
+Regioni/PPAA (ricoveri): Storicizzazione dei dati a cura di [OpenCovid](https://github.com/opencovid-mr/infn-iss) a partire da ["CovidStat: Dati dell'Istituto Superiore di Sanità"](https://covid19.infn.it/iss/) dashboard INFN realizzata utilizzando dati forniti da ISS esposti con [Licenza CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 
  
