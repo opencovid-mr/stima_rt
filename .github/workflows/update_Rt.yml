@@ -31,7 +31,12 @@ jobs:
     # Run R script
     - name: Update RT Estimates Lombardia + CSV
       run: Rscript source/computeRt_Lombardia.R
-      
+    # Run R script
+    - name: Update RT Estimates RegioniPA + CSV
+      run: Rscript source/computeRt_RegioniPA.R
+ 
+
+     
  # Add new files in data folder, commit along with other modified files, push
     - name: Commit files
       run: |
@@ -40,7 +45,7 @@ jobs:
             echo "New update available"
             git config --local user.name actions-user
             git config --local user.email "actions@github.com"
-            git add output/Rt_sint/* output/Rt_hosp/* output/regioneLombardia/*
+            git add output/Rt_sint/* output/Rt_hosp/* output/regioneLombardia/* output/Rt_hosp_regionali/*
             git commit -am "Update data - $(date)"
             git push origin main
           else
