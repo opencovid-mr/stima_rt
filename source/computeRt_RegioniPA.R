@@ -75,7 +75,7 @@ for (tipo in tipoDati) {
     ## avvisa inoltre che la parte iniziale della curva non e' sufficiente alla stima corretta della variabilita' di Rt ("You're estimating R too early in the epidemic to get the desired posterior CV")
     
     ###################
-    ### Attenzione! ###
+    ### Attenzione  ###
     ###################
     
     ## La stima e' calcolata su tutta la curva epidemica specificata, ma il pacchetto non puo' tenere conto dei ritardi di inserimento nel dato
@@ -125,7 +125,7 @@ for (tipo in tipoDati) {
                           " aggiornato al ", tail(output$Data,1), " con 95%CrI"), 
            x = "Data", y = "Rt_hosp",
            subtitle = paste0("ATTENZIONE: dati ultimi ", int_consolidamento, " giorni esclusi in quanto non consolidati (basato sul dato nazionale). Per un confronto con Rt_sintomi considerare ritardo tra sintomi e ricovero."),
-           caption = paste0("Rt ottenuto con EpiEstim (tw=7gg, shape=", shape.stimato, " rate=", rate.stimato, ") da dati Istituto Superiore Sanit‡ via INFN")) +
+           caption = paste0("Rt ottenuto con EpiEstim (tw=7gg, shape=", shape.stimato, " rate=", rate.stimato, ") da dati Istituto Superiore Sanit√† via INFN")) +
       ylim(0, 5) + #per evitare ampi intervalli a causa di bassa numerosita'
       geom_point(data = tail(outputCons,1), aes(x = Data, y = R.medio), size =3) +
       geom_text(data = tail(outputCons,1), aes(label = paste0(round(R.medio,2), " [", round(R.lowerCI,2), "-", round(R.upperCI,2), "]")),
