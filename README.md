@@ -1,6 +1,6 @@
 # stima_rt
 
-Codice R per stimare indice Rt_sintomi e Rt_ricoveri dell'Italia e Rt_sintomi di Regione Lombardia
+Codice R per stimare indice Rt_sintomi e Rt_ricoveri dell'Italia, Rt_sintomi di Regione Lombardia e Rt_ricoveri di tutte le Regioni/PPAA
 
 [![GitHub commit](https://img.shields.io/github/last-commit/opencovid-mr/stima_rt)](https://github.com/opencovid-mr/stima_rt/commits/master)
 
