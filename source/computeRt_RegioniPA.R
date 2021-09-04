@@ -104,14 +104,12 @@ for (tipo in tipoDati) {
     output <-
       data.frame(Data = curva.epidemica$Date[8:nrow(curva.epidemica)], R.lowerCI, R.medio, R.upperCI, Consolidato)
     fileOut1 <-
-      here::here(outputFolder, tipo,
-                 paste0("Rt_", tipo, "_", regioniPA[i], "_updated_", updateData, ".csv"))
+      here::here(outputFolder, paste0("Rt_", tipo, "_", regioniPA[i], "_updated_", updateData, ".csv"))
     write.csv(output, fileOut1, row.names = F)
     
     # Salva risultati piu' recenti in file a parte
     fileOutL <-
-      here::here(outputFolder, tipo,
-                 paste0("Rt_", tipo, "_", regioniPA[i], "_updated_latest.csv"))
+      here::here(outputFolder, paste0("Rt_", tipo, "_", regioniPA[i], "_updated_latest.csv"))
     write.csv(output, fileOutL, row.names = F)
     
     #Plot
