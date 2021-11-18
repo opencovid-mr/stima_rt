@@ -199,7 +199,7 @@ for (i in 1:length(regioniPA)) {
   ggsave(
     filename = here::here(
       outputFolder,
-      paste0("Rt_sint_", regioniPA[i], "_updated_latest.png")
+      paste0("Rt_hosp_", regioniPA[i], "_updated_latest.png")
     ),
     p,
     width = 465,
