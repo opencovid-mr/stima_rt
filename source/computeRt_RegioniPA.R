@@ -151,7 +151,7 @@ for (i in 1:length(regioniPA)) {
     geom_hline(yintercept = 1) +
     labs(
       title = paste0(
-        "Rt_sintomi ",
+        "Rt_hosp ",
         toupper(regioniPA[i]),
         " fino al ",
         tail(outputCons$Data, 1),
@@ -160,7 +160,7 @@ for (i in 1:length(regioniPA)) {
         " con 95%CrI"
       ),
       x = "Data",
-      y = "Rt_sint",
+      y = "Rt_hosp",
       subtitle = paste0(
         "ATTENZIONE: dati ultimi ",
         int_consolidamento,
