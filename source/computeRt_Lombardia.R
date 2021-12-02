@@ -28,7 +28,8 @@ ultimo <- T
 
 basePath <- "https://raw.githubusercontent.com/opencovid-mr/Lombardia-Stati_Clinici/main/data/"
 storico_date <- seq(as.Date("2021-02-18"), as.Date("2021-11-18"), 7)
-storico_date <- c(storico_date, seq(as.Date("2021-11-30"), Sys.Date(), 7)) #Reg Lombardia pare aver spostato la data degli aggiornamenti
+storico_date <- c(storico_date, as.Date("2021-11-30"), as.Date("2021-12-03")) #Reg Lombardia pare aver spostato la data degli aggiornamenti
+storico_date <- c(storico_date, seq(as.Date("2021-12-09"), Sys.Date(), 7)) #Reg Lombardia pare aver ripristinato la data degli aggiornamenti
 storico_date <- storico_date[!storico_date==as.Date("2021-07-01")] #non aggiornato da Reg Lombardia in questa data
 
 # Verbatim da calcoloRt_EpiEstim.R #############################################
