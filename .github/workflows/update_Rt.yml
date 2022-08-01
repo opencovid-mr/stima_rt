@@ -26,8 +26,8 @@ jobs:
     - name: Update RT Estimates Sintomi + CSV
       run: Rscript source/computeRt_sint.R
     # Run R script
-    - name: Update RT Estimates Hospitalizations + CSV
-      run: Rscript source/computeRt_hosp.R
+    #- name: Update RT Estimates Hospitalizations + CSV
+    #  run: Rscript source/computeRt_hosp.R
     # Run R script
     - name: Update RT Estimates Lombardia + CSV
       run: Rscript source/computeRt_Lombardia.R
