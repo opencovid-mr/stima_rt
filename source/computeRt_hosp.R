@@ -64,7 +64,7 @@ if(ultimo){
 
 # Stima Rt
 for (i in toDo) {
-  curva.epidemica <- data[data$iss_date == storico_date[i], 2:3]
+  curva.epidemica <- data[data$iss_date == storico_date[i], c(1,2)]
   colnames(curva.epidemica) <- c("Date", "I")
   
   # Verbatim da calcoloRt_EpiEstim.R #############################################
