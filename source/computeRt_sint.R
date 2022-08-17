@@ -36,6 +36,7 @@ data[is.na(data)] <- 0
 data$iss_date <- as.Date(data$iss_date, format = "%d/%m/%Y")
 data$DATA_INIZIO_SINTOMI <- as.Date(data$DATA_INIZIO_SINTOMI, format = "%d/%m/%Y")
 data <- na.omit(data) #Elimina i casi senza data inizio sintomi
+data <- data[order(data$DATA_INIZIO_SINTOMI),]
 
 storico_date <- unique(data$iss_date)
 
